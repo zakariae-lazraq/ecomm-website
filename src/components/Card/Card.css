@@ -1,0 +1,15 @@
+.card-item {
+  width: 350px;
+
+  display: flex;
+  align-items: flex-start;
+ 
+  flex-direction: column;
+}
+.card-item img {
+  width: 100%;
+}
+.card-item h2 {
+  font-size: 14px;
+  font-weight: 500;
+}

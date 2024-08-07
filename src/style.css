@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.new-collections,
+.shop-category {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.shop-category {
+  cursor: pointer;
+}
+
+.shop-title {
+  width: 100%;
+  max-width: 600px; /* Adjusted for responsiveness */
+  margin: auto;
+  text-align: center;
+  font-size: 2rem; /* Adjusted for responsiveness */
+}
+
+.exclusive-contact {
+  width: 100%;
+  max-width: 800px; /* Adjusted for responsiveness */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(238, 130, 238, 0.4); /* Use rgba for transparency */
+  padding: 50px;
+  gap: 20px;
+  border-radius: 10px; /* Added rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.exclusive-contact h2 {
+  text-align: center;
+  font-size: 2.5rem; /* Adjust font size for better readability */
+  margin-bottom: 10px;
+}
+
+.exclusive-contact p {
+  text-align: center;
+  font-size: 1.2rem; /* Slightly larger font size */
+  margin-bottom: 20px;
+}
+
+.contact-input {
+  display: flex;
+  width: 100%;
+  max-width: 500px; /* Limit the maximum width */
+  border-radius: 20px;
+  overflow: hidden; /* Ensure the border-radius is applied to children */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for input area */
+}
+
+.contact-input input {
+  flex: 1;
+  padding: 15px 20px; /* Adjust padding */
+  border: none;
+  outline: none;
+  font-size: 1rem; /* Ensure consistent font size */
+  border-top-left-radius: 20px; /* Round left side */
+  border-bottom-left-radius: 20px;
+  text-align: center;
+}
+
+.contact-input button {
+  padding: 15px 20px; /* Adjust padding */
+  border: none;
+  outline: none;
+  background-color: #ee82ee; /* Button color */
+  color: white; /* Text color */
+  font-size: 1rem; /* Ensure consistent font size */
+  cursor: pointer;
+  border-top-right-radius: 20px; /* Round right side */
+  border-bottom-right-radius: 20px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-input button:hover {
+  background-color: #da70d6; /* Darker shade for hover effect */
+}
+
+.contact-input input:focus {
+  border: 2px solid #ee82ee; /* Add border on focus */
+}
+
+/* Cart styles */
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e74c3c;
+  font-size: 1.2em;
+}
+
+.remove-btn:hover {
+  color: #c0392b;
+}
+
+.cart-totals-box {
+  width: 100%;
+  max-width: 400px; /* Adjusted for responsiveness */
+}
+
+.cart-totals-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.cart-totals-container h1 {
+  margin-bottom: 20px;
+}
+
+.cart-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.checkout-btn:hover {
+  background-color: #2ecc71;
+}
+
+.contact-cart {
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.promo-btn {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.promo-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .shop-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .shop-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shop-banner {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-info {
+    font-size: 1.5rem;
+  }
+
+  .exclusive-contact {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .exclusive-contact h2 {
+    font-size: 2rem;
+  }
+
+  .exclusive-contact p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .shop-items {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-title {
+    font-size: 1rem;
+  }
+
+  .banner-info {
+    font-size: 1.2rem;
+  }
+}

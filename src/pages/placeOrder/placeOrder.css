@@ -1,0 +1,45 @@
+.order-container {
+  width: 80%;
+
+  margin: 80px auto;
+  display: flex;
+  align-items: flex-start; /* Align items to the start for better alignment on smaller screens */
+  justify-content: space-between;
+  flex-direction: row; /* Default to row for larger screens */
+}
+
+.form {
+  width: 100%; /* Full width for smaller screens */
+  max-width: 600px; /* Max width for larger screens */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.form input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  outline: 0;
+}
+
+.form .input-col {
+  display: flex;
+  flex-wrap: wrap; /* Allow inputs to wrap on smaller screens */
+  gap: 10px;
+}
+
+.input-col input {
+  width: 100%; /* Full width on smaller screens */
+  max-width: calc(50% - 10px); /* Adjusted width to account for gaps */
+}
+
+.cart-total-container {
+  width: 100%; /* Full width for smaller screens */
+  max-width: 600px; /* Max width for larger screens */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding does not affect total width */
+}

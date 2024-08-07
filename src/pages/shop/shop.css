@@ -1,0 +1,133 @@
+/* Popular Women section */
+.popular-women {
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .popular-women h1 {
+    border-bottom: 2px solid #eee;
+    text-align: center;
+  }
+  
+  .shop-items {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default for normal screens */
+    margin: 100px auto;
+    gap: 10px;
+  }
+  
+  /* Shop banner styles */
+  .shop-banner {
+    width: 60%;
+    margin: 40px auto; /* Adjusted for spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(238, 130, 238, 0.4);
+    border-radius: 20px;
+    padding: 20px; /* Added padding for better spacing */
+    box-sizing: border-box;
+  }
+  
+  .banner-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    flex-direction: column;
+    text-align: center; /* Centered text for smaller screens */
+  
+}
+.shop-title h1{
+  font-size: 3rem;
+  font-weight: 600;
+
+}  
+  .banner-info button {
+    padding: 10px 25px;
+    background-color: tomato;
+    color: white;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+  }
+  
+  /* New Collections section */
+  .new-collections h1 {
+    text-align: center;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 1024px) {
+    .shop-items {
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr); /* Medium screens show 2 items */
+      margin: 50px auto;
+    }
+  
+    .shop-banner {
+      width: 80%;
+      flex-direction: column;
+    }
+  
+    .banner-info {
+      font-size: 24px;
+    }
+  
+    .banner-info button {
+      font-size: 14px;
+      padding: 8px 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .shop-items {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr); /* Tablets also show 2 items */
+      margin: 30px auto;
+    }
+  
+    .shop-banner {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .banner-info {
+      font-size: 20px;
+    }
+  
+    .banner-info button {
+      font-size: 13px;
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .shop-items {
+      grid-template-columns: 1fr; /* Mobile screens show 1 item */
+    }
+  
+    .shop-banner {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .banner-info {
+      font-size: 18px;
+    }
+  
+    .banner-info button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  .banner-category{
+    width: 80%;
+    margin: auto;
+  }
+  

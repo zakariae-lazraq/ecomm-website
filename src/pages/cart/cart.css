@@ -1,0 +1,144 @@
+.cart-table-container {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 10px; /* Add padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+  }
+  
+  .cart-table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 0;
+    border-radius: 8px; /* Add rounded corners */
+    overflow: hidden; /* Ensure borders are rounded */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  .cart-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    padding: 12px;
+    text-align: center; /* Center-align text in table cells */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-table th {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .cart-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .cart-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px; /* Add rounded corners to images */
+  }
+  
+  .remove-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #e74c3c;
+    font-size: 1.4em;
+  }
+  
+  .remove-btn:hover {
+    color: #c0392b;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .cart-table {
+      font-size: 0.9rem;
+    }
+  
+    .cart-item-image {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .cart-table-container {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 10px;
+    }
+  
+    .cart-table {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  
+    .cart-table th,
+    .cart-table td {
+      padding: 8px;
+    }
+  
+    .cart-item-image {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .remove-btn {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cart-table th,
+    .cart-table td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: right;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .cart-table th {
+      text-align: left;
+      font-size: 1em; /* Increase font size for better readability */
+    }
+  
+    .cart-item-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .remove-btn {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .cart-table-container {
+      padding: 5px;
+    }
+  
+    .cart-table {
+      font-size: 0.8rem;
+    }
+  
+    .cart-item-image {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .remove-btn {
+      font-size: 1em;
+    }
+  }
+  
